@@ -1,0 +1,34 @@
+Assignment & Sequencing:
+---
+a = 5
+print(a)
+---
+
+Selection:
+---
+a = 5
+if a  < 10:
+    print('a is less that 10')
+else:
+    print('a is >= 10')
+---
+
+Repetition (& Definite Iteration):
+---
+for i in range(10):
+    print('in this iteration, i is:', i)
+---
+
+Indefinite Iteration:
+---
+a = 1
+while a < 10:
+    a += 1
+---
+
+Nested loops:
+---
+for i in range(4):
+    for j in range(4):
+        print(i, j)
+---

@@ -1,0 +1,24 @@
+End of Chapter Tasks
+====================
+
+1)
+a, b = 5, 6
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+
+2) In some languages (not Python), data type is conserved, so dividing integers will return integers and dividing floats will return floats.
+3) The value that a varaible refers to can change - this allows you to use them in an iterative structure where the value will be updated.
+4) Truncation (to 3 d.p): int(x * 1000) / 1000
+   Rounding   (to 3 d.p): round(x, 3)
+5) Random numbers may used for textured graphics, simulation and games.
+6) a OR b is false when a is false and b is false
+   a XOR b is false when a is false and b is false or a is true and b is true
+   e.g. true OR  true == true
+        true XOR true == false
+7) You can use slicing: 'hello world'[:5] gives 'hello'
+8) Strings can be converted to many different formats such as integers, floats and datetime objects.
+9) If you know all the parameters to the computer's random function, you can predicte the result so it is not truly random.

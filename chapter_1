@@ -1,0 +1,68 @@
+Activities
+==========
+
+Asks user for their name and greets then with it:
+---
+name = input('enter your name: ')
+print('hello', name)
+---
+
+Asks for 2 numbers, stores them and prints their sum:
+---
+a = int(input('num 1: '))
+b = int(input('num 2: '))
+print(a + b)
+---
+
+Print a multiplication table up to 12:
+---
+for a in range(1, 12):
+    for b in range(1, 12):
+        print(a, 'x', b, '=', a * b)
+---
+
+Prints the next 20 leap years (n.b. leap year on every date divisible by 4):
+---
+import datetime
+todays_year = datetime.datetime.now().year
+next_leap_year = todays_year + 4 - (todays_year % 4)
+for i in range(20):
+    print(next_leap_year + i * 4)
+---
+
+Guessing game:
+---
+import random
+computer_choice = random.randint(1,10)
+user_choice = int(input('enter a number: '))
+tries = 1
+while user_choice != computer_choice:
+    if user_choice < computer_choice:
+        print('too small!')
+    else:
+        print('too large!')
+    user_choice = int(input('try again: '))
+    tries += 1
+print('took', tries, 'attempts')
+---
+
+Reverse a user's string:
+---
+def reverse_string(s):
+    return s[::-1]
+print(reverse_string(input('string to reverse: '))
+---
+
+End of Chapter Tasks
+====================
+
+1) Makes code easier to write. Makes code easier to read.
+2) A constant does not change its value during the execution of a program; a variable is expected to change.
+3) One location to refer to.
+4) A value is the actual data stored in a variable. A variable is a "name tag" for a value
+5) a) float         | current_vat_rate
+   b) datetime      | todays_date
+   c) integer       | shop_takings
+   d) datetime      | date_of_birth
+   e) string        | watch_wrist
+
