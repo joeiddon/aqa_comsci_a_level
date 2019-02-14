@@ -24,3 +24,9 @@
 
 [27 – Encryption.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/27%20%E2%80%93%20Encryption.pdf)
 
+[32 – Internal Hardware of a Computer.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/32%20%E2%80%93%20Internal%20Hardware%20of%20a%20Computer.pdf)
+
+[33 – Processor.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/33%20%E2%80%93%20Processor.pdf)
+
+[34 – Processor Instruction Set and Addressing Modes.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/34%20%E2%80%93%20Processor%20Instruction%20Set%20and%20Addressing%20Modes.pdf)
+
