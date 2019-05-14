@@ -13,9 +13,9 @@ EMPTYSTRING = ''
 def ReportError(s):
   #`'{0:<5}'.format('*')` is equivalent to `'*'.ljust(5)`
   #`'{0:>5}'.format('*')` is equivalent to `'*'.rjust(5)`
-  print('{0:<5}'.format('*'),s,'{0:>5}'.format('*')) 
-        
-def StripLeadingSpaces(Transmission): 
+  print('{0:<5}'.format('*'),s,'{0:>5}'.format('*'))
+
+def StripLeadingSpaces(Transmission):
   TransmissionLength = len(Transmission)
   if TransmissionLength > 0:
     FirstSignal = Transmission[0]
@@ -33,7 +33,7 @@ def StripTrailingSpaces(Transmission):
   while Transmission[LastChar] == SPACE:
     LastChar -= 1
     Transmission = Transmission[:-1]
-  return Transmission  
+  return Transmission
 
 def GetTransmission():
   #returns an instance of `Transmission` which is a string containing '`='` and `' '`
@@ -51,7 +51,7 @@ def GetTransmission():
     ReportError("No transmission found")
     Transmission = EMPTYSTRING
   return Transmission
-	
+
 def GetNextSymbol(i, Transmission):
   print('GetNextSymbol(i,Transmission)', i, Transmission)
   #returns the next dot/dash from the index i in transmission
@@ -112,7 +112,7 @@ def Decode(CodedLetter, Dash, Letter, Dot):
 def ReceiveMorseCode(Dash, Letter, Dot):
   PlainText = EMPTYSTRING
   MorseCodeString = EMPTYSTRING
-  Transmission = GetTransmission() 
+  Transmission = GetTransmission()
   LastChar = len(Transmission) - 1
   i = 0
   while i < LastChar:
@@ -131,7 +131,7 @@ def SendMorseCode(MorseCode):
     PlainTextLetter = PlainText[i]
     if PlainTextLetter == SPACE:
       Index = 0
-    else: 
+    else:
       Index = ord(PlainTextLetter) - ord('A') + 1
     CodedLetter = MorseCode[Index]
     MorseCodeString = MorseCodeString + CodedLetter + SPACE
@@ -144,7 +144,7 @@ def DisplayMenu():
   print("R - Receive Morse code")
   print("S - Send Morse code")
   print("X - Exit program")
-  
+
 def GetMenuOption():
   MenuOption = EMPTYSTRING
   while len(MenuOption) != 1:
@@ -162,14 +162,14 @@ def SendReceiveMessages():
   print()
 
   while not ProgramEnd:
-    DisplayMenu() 
+    DisplayMenu()
     MenuOption = GetMenuOption()
     if MenuOption == 'R':
       ReceiveMorseCode(Dash, Letter, Dot)
     elif MenuOption == 'S':
-      SendMorseCode(MorseCode) 
+      SendMorseCode(MorseCode)
     elif MenuOption == 'X':
       ProgramEnd = True
-    
+
 if __name__ == "__main__":
   SendReceiveMessages()

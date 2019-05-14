@@ -12,7 +12,7 @@ EMPTYSTRING = ''
 
 def ReportError(s):
   print('{0:<5}'.format('*'),s,'{0:>5}'.format('*')) 
-        
+
 def StripLeadingSpaces(Transmission): 
   TransmissionLength = len(Transmission)
   if TransmissionLength > 0:
@@ -47,7 +47,7 @@ def GetTransmission():
     ReportError("No transmission found")
     Transmission = EMPTYSTRING
   return Transmission
-	
+
 def GetNextSymbol(i, Transmission):
   if Transmission[i] == EOL:
     print()
@@ -162,7 +162,7 @@ def SendReceiveMessages():
       SendMorseCode(MorseCode) 
     elif MenuOption == 'X':
       ProgramEnd = True
-    
+
 
 if __name__ == "__main__":
   SendReceiveMessages()
