@@ -24,6 +24,10 @@
 
 [27 - Encryption.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/27%20-%20Encryption.pdf)
 
+[30 - Boolean Algebra.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/30%20-%20Boolean%20Algebra.pdf)
+
+[31 - Logic Gates.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/31%20-%20Logic%20Gates.pdf)
+
 [32 - Internal Hardware of a Computer.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/32%20-%20Internal%20Hardware%20of%20a%20Computer.pdf)
 
 [33 - Processor.pdf](https://joeiddon.github.io/aqa_comsci_a_level/notes/33%20-%20Processor.pdf)
